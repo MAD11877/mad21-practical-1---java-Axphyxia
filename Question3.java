@@ -12,5 +12,8 @@ public class Question3
      
     Scanner in = new Scanner(System.in);
     
+    int uint = in.nextInt();
+    int dint = uint*uint;
+    System.out.println(dint);
   }
 }

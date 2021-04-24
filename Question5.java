@@ -28,5 +28,27 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    int uInNo = in.nextInt();
+    int a[] = new int[uInNo];
+    for(int i=uInNo;i>0;i--)
+    {
+      int uIn = in.nextInt();
+      a[i-1] = uIn;
+    }
+
+    int maxCount = 0;
+    int mode = 0;
+    for (int i = 0; i < a.length; i++) {
+        int value = a[i];
+        int count = 1;
+        for (int j = 0; j < a.length; j++) {
+            if (a[j] == value) count++;
+            if (count > maxCount) {
+                mode = value;
+                maxCount = count;
+            }
+        }
+    }
+    System.out.println(mode);
   }
 }

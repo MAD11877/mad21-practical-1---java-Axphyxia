@@ -19,5 +19,14 @@ public class Question4
      
     Scanner in = new Scanner(System.in);
     
+    int uint = in.nextInt();
+    for(int i = uint;i>0;i--)
+    {
+      for(int ii = i;ii>0;ii--)
+      {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 }
